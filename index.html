@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cases</title>
+    <link rel="icon" href="check.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.5;
+            color: #333;
+        }
+        .text-container {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+        .text-container:hover {
+            background-color: #e9f5ff;
+        }
+        .text {
+            font-size: 1.2em;
+            margin-bottom: 0px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+  
+<h2 style="color: #000000;">Test Case 1</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text1')" id="text1">
+<pre class="text" id="text1">Розташування логотипу "GoIT" в хедері</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text2')" id="text2">
+<pre class="text" id="text2">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text3')" id="text3">
+<pre class="text" id="text3">1. Перевірити розташування логотипа "GoIT"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text4')" id="text4">
+<pre class="text" id="text4">1. Логотип "GoIT" розташований у правому кутку хедера</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 2</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text5')" id="text5">
+<pre class="text" id="text5">Перехід на головний сайт компанії за допомогою логотипу "GoIT"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text6')" id="text6">
+<pre class="text" id="text6">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text7')" id="text7">
+<pre class="text" id="text7">1. Натиснути на логотип "GoIT"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text8')" id="text8">
+<pre class="text" id="text8">1. Відкривається сайт https://goit.global/ua/</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 3</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text9')" id="text9">
+<pre class="text" id="text9">Розташування індикатору локалізації "UA|RU" в хедері</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text10')" id="text10">
+<pre class="text" id="text10">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text11')" id="text11">
+<pre class="text" id="text11">1. Перевірити розташування індикатора локалізації "UA|RU"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text12')" id="text12">
+<pre class="text" id="text12">1. Індикатор локалізації "UA|RU" розташований у лівому кутку хедера</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 4</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text13')" id="text13">
+<pre class="text" id="text13">Зміна мови сторінки за допомогою локалізації "UA|RU"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text14')" id="text14">
+<pre class="text" id="text14">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text15')" id="text15">
+<pre class="text" id="text15">1. Натиснути на символ "UA" індикатору локалізації 
+2. Натиснути на символ "RU" індикатору локалізації</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text16')" id="text16">
+<pre class="text" id="text16">1. Зміст сторінки відображається українською мовою. Підсвічено символ "UA" 
+2. Зміст сторінки відображається російською мовою. Підсвічено символ "RU"</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 5</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text17')" id="text17">
+<pre class="text" id="text17">Відкриття модального вікна "Політика конфіденційності"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text18')" id="text18">
+<pre class="text" id="text18">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text19')" id="text19">
+<pre class="text" id="text19">1. Натиснути на клікабельний текст "Політика конфіденційності" у футері сторінки</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text20')" id="text20">
+<pre class="text" id="text20">Відкривається модальне вікно з інформацією про політику конфіденційності мовою відповідному підсвіченому індикатору локалізації в хедері.</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 6</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text21')" id="text21">
+<pre class="text" id="text21">Закриття модального вікна "Політика конфіденційності"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text22')" id="text22">
+<pre class="text" id="text22">1. Сторінка "Тестування Java завдань" відкрита в браузері 
+2. Модальне вікно "Політика конфіденційності" відкрито</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text23')" id="text23">
+<pre class="text" id="text23">1. Натиснути на хрестик (Х) у правому верхньому кутку модального вікна</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text24')" id="text24">
+<pre class="text" id="text24">Модальне вікно закривається</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 7</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text25')" id="text25">
+<pre class="text" id="text25">Компіляція правильної відповіді в редакторі коду</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text26')" id="text26">
+<pre class="text" id="text26">1. Сторінка "Тестування Java завдань" відкрита в браузері 
+2. Відкрита табличка з правильними відповідями на запитання</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text27')" id="text27">
+<pre class="text" id="text27">1. Ввести правильну відповідь на питання у виділений сірий кольором рядок у вікні редактора коду 
+2. Натиснути на кнопку "Перевірити"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text28')" id="text28">
+<pre class="text" id="text28">1. Відповідь введена
+2. На сервер надсилається запит на перевірку коду у вікні редактора. Компіляція пройшла успішно. Відповідь висвічується в секції результатів зеленим текстом. Текст на кнопці "Перевірити" змінюється на "Наступне питання"</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 8</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text29')" id="text29">
+<pre class="text" id="text29">Компіляція НЕправильної відповіді в редакторі коду</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text30')" id="text30">
+<pre class="text" id="text30">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text31')" id="text31">
+<pre class="text" id="text31">1. Ввести неправильну відповідь у виділений сірий кольором рядок у вікні редактора коду 
+2. Натиснути на кнопку "Перевірити"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text32')" id="text32">
+<pre class="text" id="text32">1. Відповідь введена
+2. На сервер надсилається запит на перевірку коду у вікні редактора. В секції результатів висвічується помилка компіляції.</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 9</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text33')" id="text33">
+<pre class="text" id="text33">Перехід між питаннями за допомогою навігаційного меню</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text34')" id="text34">
+<pre class="text" id="text34">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text35')" id="text35">
+<pre class="text" id="text35">1. Натиснути на стрілку "праворуч" навігаційного меню
+2. Натиснути на стрілку "ліворуч"
+3. Натиснути на центральну кнопку навігаційного меню, на якій демонструється номер поточного питання та через слеш "/" загальна кількість питань 
+4. Натиснути на кнопку з номером питання у списку</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text36')" id="text36">
+<pre class="text" id="text36">1. Відкривається наступне питання
+2. Відкривається попереднє питання
+3. Відкривається список вирішених питань
+4. Відкривається сторінка з відповідним питанням</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 10</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text37')" id="text37">
+<pre class="text" id="text37">Згортання та розгортання теоретичної частини розділу теорії за допомогою заголовку "Теорія"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text38')" id="text38">
+<pre class="text" id="text38">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text39')" id="text39">
+<pre class="text" id="text39">1. Натиснути на заголовок "Теорія"
+2. Натиснути на заголовок "Теорія" ще раз.</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text40')" id="text40">
+<pre class="text" id="text40">1. Основна теоретична частина розділу теорії згортається, у розділі залишаються лише формулювання завдання та критеріїв прийняття
+2. Основна теоретична частина розділу теорії повертається у початковий стан</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 11</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text41')" id="text41">
+<pre class="text" id="text41">Скидання коду у початковий стан за допомогою кнопки "Скинути"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text42')" id="text42">
+<pre class="text" id="text42">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text43')" id="text43">
+<pre class="text" id="text43">1. Натиснути кнопку "Скинути"
+2. Натиснути кнопку "Так"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text44')" id="text44">
+<pre class="text" id="text44">1. Відкривається модальне вікно із запитом про підтвердження бажання користувача скинути код у початковий стан.
+2. Вікно закривається, а код у редакторі скидається до початкового стану</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 12</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text73')" id="text73">
+<pre class="text" id="text73">Скасування скидання коду у початковий стан і закриття модального вікна кнопки "Скинути"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text74')" id="text74">
+<pre class="text" id="text74">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text75')" id="text75">
+<pre class="text" id="text75">1. Натиснути кнопку "Скинути"
+2. Натиснути кнопку "Ні"
+3. Натиснути кнопку "Скинути"
+4. Клікнути по сірій області за межами модального вікна
+5. Натиснути кнопку "Скинути"
+6. Натиснути клавішу "Esc"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text76')" id="text76">
+<pre class="text" id="text76">1. Відкривається модальне вікно із запитом про підтвердження бажання користувача скинути код у початковий стан.
+2. Вікно закривається, а код у редакторі скидається до початкового стану</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 13</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text45')" id="text45">
+<pre class="text" id="text45">Згортання та розгортання секції результатів за допомогою кнопки "Приховати секцію результатів"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text46')" id="text46">
+<pre class="text" id="text46">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text47')" id="text47">
+<pre class="text" id="text47">1. Натиснути на кнопку "Приховати секцію результатів"
+2. Натиснути на кнопку "Показати секцію результатів"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text48')" id="text48">
+<pre class="text" id="text48">1. Секція результатів згортається, вікно редактора коду розгортається на всю висоту тіла сторінки, меню перевірки переміщається вниз сторінки, текст кнопки змінюється на "Показати секцію результатів".
+2. Секція результатів розгортається у вихідний стан</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 14</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text49')" id="text49">
+<pre class="text" id="text49">Згортання розділу теорії та розгортання вікна редактору коду за допомогою кнопки "Приховати теорію та завдання"</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text50')" id="text50">
+<pre class="text" id="text50">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text51')" id="text51">
+<pre class="text" id="text51">1. Натиснути на кнопку "Приховати теорію та завдання"
+2. Натиснути на іконку кнопки "Приховати теорію та завдання"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text52')" id="text52">
+<pre class="text" id="text52">1. Розділ теорії згортається, і вікно редактора розгортається на всю ширину сторінки. Кнопка зменшується до іконки без тексту
+2. Розділ теорії розгортається, а вікно редактора згортається у початковий стан</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 15</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text53')" id="text53">
+<pre class="text" id="text53">Редагування стартового коду у вікні редактора</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text54')" id="text54">
+<pre class="text" id="text54">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text55')" id="text55">
+<pre class="text" id="text55">1. Редагувати стартовий код</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text56')" id="text56">
+<pre class="text" id="text56">1. Стартовий код редагувати неможливо</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 16</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text57')" id="text57">
+<pre class="text" id="text57">Компіляція коду з введеними символами в кінці заблокованих рядків</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text58')" id="text58">
+<pre class="text" id="text58">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text59')" id="text59">
+<pre class="text" id="text59">1. Ввести будь-яки символи в кінці заблокованих рядків
+2. Натиснути кнопку "Перевірити"</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text60')" id="text60">
+<pre class="text" id="text60">1. Символи введені
+2. В секції результатів відображається помилка компіляції</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 17</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text61')" id="text61">
+<pre class="text" id="text61">Наявність стартового коду у вікна редактора та його доповнення правильною відповіддю</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text62')" id="text62">
+<pre class="text" id="text62">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text63')" id="text63">
+<pre class="text" id="text63">1. Перевірити наявність стартового коду у вікні редактора
+2. Ввести код у виділеному сірим кольором рядку, у якому встановлено курсор</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text64')" id="text64">
+<pre class="text" id="text64">1. Стартовий код присутній
+2. Код введений в рядку</pre>
+</div>
+
+<h2 style="color: #000000;">Test Case 18</h2>
+<h3 style="color: #000000;">Target description:</h3>
+<div class="text-container" onclick="copyText('text65')" id="text65">
+<pre class="text" id="text65">Введення коду в будь-якому місці редактора коду</pre>
+</div>
+<h3 style="color: #000000;">Preconditions:</h3>
+<div class="text-container" onclick="copyText('text66')" id="text66">
+<pre class="text" id="text66">1. Сторінка "Тестування Java завдань" відкрита в браузері</pre>
+</div>
+<h3 style="color: #000000;">Steps:</h3>
+<div class="text-container" onclick="copyText('text67')" id="text67">
+<pre class="text" id="text67">1. Ввести символи в редакторі коду</pre>
+</div>
+<h3 style="color: #000000;">Expected result:</h3>
+<div class="text-container" onclick="copyText('text68')" id="text68">
+<pre class="text" id="text68">1. Писати код можна тільки у виділеному сірим кольором рядку, у якому встановлено курсор</pre>
+</div>
+
+
+
+
+
+<!-- Вы можете добавить столько блоков, сколько необходимо, просто копируя структуру выше и изменяя id -->
+
+<script>
+    function copyText(elementId) {
+        const text = document.getElementById(elementId).innerText;
+        navigator.clipboard.writeText(text).catch(err => {
+            console.error("Ошибка копирования: ", err);
+        });
+    }
+</script>
+
+</body>
+</html>
